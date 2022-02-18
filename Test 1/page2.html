@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    fieldset {
+      max-width: 50%;
+    }
+  </style>
+  <body>
+    <center>
+      <h1>Educational Profiles:</h1>
+      <form method="GET" action="./page3.html">
+        <fieldset>
+          <label for="education">Education:</label><br />
+          <select name="education" id="education" required>
+            <option value="bachelor's">Bachelor's</option>
+            <option value="hs">Higher Secondary/Diploma</option>
+            <option value="sec">Secondary</option>
+            <option value="voc">Vocational</option>
+        </select>
+          <hr />
+          <label for="marks">Marks obtained:</label><br />
+          <input type="number" min="0" max="100" id="marks" required/>
+          <hr />
+          <label for="year">Passing Year:</label><br />
+          <input type="number" min="1950" max="2026" id="year" required/>
+        </fieldset>
+        <br />
+        <button type="submit">Next</button>
+      </form>
+      <a href="./page1.html"><button>Previous</button></a>
+    </center>
+  </body>
+</html>

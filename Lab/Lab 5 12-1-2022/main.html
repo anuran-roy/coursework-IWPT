@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body bgcolor="#618ff0">
+    <style>
+        form, tr {
+            padding: 4rem;
+            margin: 10px;
+            border: 5px;
+            border-color: black;
+        }
+
+        td {
+            padding: 0.5rem;
+        }
+    </style>
+    <form>
+        <table>
+            <tr><h2 style="color: white;">Pizza Shop 2.0</h2></tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Pizza Topping:</td>
+                <td>
+                    <input type="radio" id="toppingSupreme" name="Topping" value="supreme">
+                    <label for="toppingSupreme">Supreme</label><br>
+
+                    <input type="radio" id="toppingVegetarian" name="Topping" value="vegetarian">
+                    <label for="toppingVegetarian">Vegetarian</label><br>
+
+                    <input type="radio" id="toppingHawaiian" name="Topping" value="hawaiian">
+                    <label for="toppingHawaiian">Hawaiian</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce:</td>
+                <td>
+                    <select name="pizza-sauce" id="pizzaSauce">
+                        <option value="tomato">Tomato</option>
+                        <option value="schezwan">Schezwan</option>
+                        <option value="manchurian">Manchurian</option>
+                        <option value="garlic">Garlic</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Optional Extras:</td>
+                <td>
+                    <input type="checkbox" id="extraCheese">
+                    <label for="extraCheese">Extra Cheese</label>
+                    <input type="checkbox" id="glutenFree">
+                    <label for="glutenFree">Gluten-free Base</label>
+                </td>
+            </tr>
+        </table>
+        <p>Delivery instructions:</p>
+        <textarea>
+        </textarea>
+        <br>
+        <br>
+        <button type="submit">Send My Order</button>
+    </form>
+</body>
+</html>
